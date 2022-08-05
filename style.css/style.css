@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body main{
+    padding: 50px 80px;
+}
+body header{
+    padding: 50px 80px;
+}
+
+header h3 {
+    float: left;
+    margin-right: 230px;
+}
+header h3 a {
+    color: black;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+nav ul li a {
+    color:black;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+nav ul li:hover::after {
+    width: 5px;
+    height: 5px;
+}
+
+header button {
+    width: 180px;
+    height: 60px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #FDC72D;
+    border-radius: 60px;
+    border: none;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+header button:hover {
+    background-color: black;
+    color: white;
+}
+
+.text {
+    position: absolute;
+    top: 200px;
+    left: 140px;
+    width: 500px;
+}
+.text h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.text p {
+    font-size: 20px;
+    opacity: 50%;
+}
+
+.text button {
+    background-color: #FDC72D;
+    width: 160px;
+    height: 60px;
+    border-radius: 60px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.text button:hover {
+    background-color: black;
+    color: white;
+}
+
+.bgImg {
+    background-image: url(../img/homepageimg.png);
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    right: 90px;
+    top: 0px;
+    z-index: -1;
+}
+
+/* about page */
+
+.firstImg {
+    width: 500px;
+    position: absolute;
+    left: 80px;
+    top: 150px;
+}
+
+.textAbout {
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+.textAbout h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.textAbout p {
+    opacity: 50%;
+}
+
+.textAbout2 {
+    width: 400px;
+    position: absolute;
+    top: 700px;
+}
+.textAbout2 h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.textAbout2 p {
+    opacity: 50%;
+}
+
+.secondImg {
+    position: absolute;
+    width: 500px;
+    top: 600px;
+    right: 80px;
+    
+}
+
+/* services */
+
+.services {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 40px;
+    width: 300px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 20px gray;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.item h3 {
+    text-align: center;
+    
+}
+.imgServices {
+    background-image: url(../img/services\ img.png);
+    background-repeat: no-repeat;
+    width: 202px;
+    height: 121px;
+    margin: 0 auto;
+}
+.imgServices2 {
+    background-image: url(../img/services2.png);
+    background-repeat: no-repeat;
+    width: 146px;
+    height: 147px;
+    margin: 0 60px;
+}
+.imgServices3 {
+    background-image: url(../img/services3.png);
+    background-repeat: no-repeat;
+    width: 146px;
+    height: 147px;
+    margin: 0 60px;
+}
+
+
+.textServices {
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.description{
+    opacity: 75%;
+}
+.more {
+    position: absolute;
+    bottom: 10px ;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    
+}
+
+.imgFooter {
+    background-image: url(../img/servicefooter.png);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 400px;
+    margin-top: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.servicesTextFoot {
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 100px;
+}
+.servicesTextFoot h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.servicesTextFoot p {
+    opacity: 75%;
+}
+
+.servicesTextFoot button {
+    width: 200px;
+    height: 60px;
+    background-color: #FDC72D;
+    border: none;
+    border-radius: 60px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.servicesTextFoot button:hover {
+    transform: scale(1.1);
+}
+
+.btn1 {
+    background-image: url(../img/apple.png);
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 14px;
+    margin-right: 20px;
+}
+.btn2 {
+    background-image: url(../img/google.png);
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 16px;
+    margin-right: 20px;
+}
+
+/* kontaqti */
+
+
+.textBox {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+}
+.firstTextBox {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.firstTextBox h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.firstTextBox p {
+    opacity: 75%;
+
+}
+
+.secondTextBox {
+    position: absolute;
+    top: 90px;
+    left: 500px;
+    line-height: 35px;
+}
+span {
+    font-weight: 700;
+}
+
+.textBox button {
+    width: 180px;
+    height: 60px;
+    background-color: #FDC72D;
+    border-radius: 60px;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.textBox button:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 450px;
+    background-color: #FEE395;
+    padding: 90px 110px;
+}
+.firstColumn {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.firstColumn h3 {
+    margin-bottom: 20px;
+}
+.firstColumn li {
+    opacity: 75%;
+}
+.contactIcons {
+    display: inline-block;
+    margin-right: 20px;
+}
+.fb, .twit, .insta {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
